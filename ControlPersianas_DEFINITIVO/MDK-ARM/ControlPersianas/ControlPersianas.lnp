@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"controlpersianas\startup_stm32f407xx.o"
+"controlpersianas\main.o"
+"controlpersianas\stm32f4xx_it.o"
+"controlpersianas\stm32f4xx_hal_msp.o"
+"controlpersianas\stm32f4xx_hal_adc.o"
+"controlpersianas\stm32f4xx_hal_adc_ex.o"
+"controlpersianas\stm32f4xx_hal_rcc.o"
+"controlpersianas\stm32f4xx_hal_rcc_ex.o"
+"controlpersianas\stm32f4xx_hal_flash.o"
+"controlpersianas\stm32f4xx_hal_flash_ex.o"
+"controlpersianas\stm32f4xx_hal_flash_ramfunc.o"
+"controlpersianas\stm32f4xx_hal_gpio.o"
+"controlpersianas\stm32f4xx_hal_dma_ex.o"
+"controlpersianas\stm32f4xx_hal_dma.o"
+"controlpersianas\stm32f4xx_hal_pwr.o"
+"controlpersianas\stm32f4xx_hal_pwr_ex.o"
+"controlpersianas\stm32f4xx_hal_cortex.o"
+"controlpersianas\stm32f4xx_hal.o"
+"controlpersianas\stm32f4xx_hal_exti.o"
+"controlpersianas\stm32f4xx_hal_tim.o"
+"controlpersianas\stm32f4xx_hal_tim_ex.o"
+"controlpersianas\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "ControlPersianas\ControlPersianas.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ControlPersianas.map" -o ControlPersianas\ControlPersianas.axf
